@@ -70,7 +70,7 @@ with gr.Blocks() as demo:
             text = gr.Textbox(
                 value="Paste unlimited text here...",
                 label="Text to synthesize",
-                lines=12,   # larger text area
+                lines=19,   # larger text area
                 placeholder="Enter your text (no character limit)"
             )
             ref_wav = gr.Audio(sources=["upload", "microphone"], type="filepath", label="Reference Audio File", value=None)
@@ -113,3 +113,4 @@ if __name__ == "__main__":
         max_size=50,
         default_concurrency_limit=1,
     ).launch(share=True)
+
